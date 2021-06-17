@@ -93,3 +93,20 @@ void Vector<T>::clear() {
 | 1'000'000                        | 0.003s      | 0.003s       |
 | 10'000'000                       | 0.039s      | 0.023s       |
 | 100'000'000                      | 0.401s      | 0.247s       |
+
+
+
+
+
+## 3. Atminties perskirstymų tyrimas ##
+
+Šiame testavime palyginama std::vector ir customVector atminties perskirstymai, užpildant 100'000'000 elementų.
+Perskirstymas įvyksta tada, kai yra patenkinama sąlyga: capacity() == size().
+
+```
+Reallocated: 28 times
+Reached capacity: 134217728
+
+Reallocated: 28 times
+Reached capacity: 134217728
+```
