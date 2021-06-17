@@ -27,3 +27,15 @@ clear() funkcija (vector size): 0
 ```cpp
 size_type size() const { return avail - data; }
 ```
+
+#### at() funkcija ####
+
+```cpp
+template <class T>
+typename Vector<T>::reference Vector<T>::at(size_type i) {
+    if (i >= 0 && size() > i)
+        return data[i];
+
+    else throw std::out_of_range {"Vector::at"};
+}
+```
