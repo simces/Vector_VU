@@ -65,3 +65,17 @@ void Vector<T>::pop_back(){
     avail--;
 }
 ```
+
+
+
+#### clear() funkcija ####
+
+```cpp
+template <class T>
+void Vector<T>::clear() {
+    iterator it = avail;
+    while (it != data)
+        alloc.destroy(--it);
+    avail = data;
+}
+```
