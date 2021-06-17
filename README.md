@@ -20,4 +20,10 @@ size() funkcija: 4
 pop_back() funkcija (vector size): 3
 clear() funkcija (vector size): 0 
 ```
+### Panaudotos funkcijos ###
 
+#### size() funkcija ####
+
+```cpp
+size_type size() const { return avail - data; }
+```
