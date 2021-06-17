@@ -53,3 +53,15 @@ void Vector<T>::push_back(const T& val){
 }
 ```
 
+
+
+#### pop_back() funkcija ####
+
+```cpp
+template <class T>
+void Vector<T>::pop_back(){
+    iterator it = avail;
+    alloc.destroy(--it);
+    avail--;
+}
+```
