@@ -79,3 +79,7 @@ void Vector<T>::clear() {
     avail = data;
 }
 ```
+
+## 2. Efektyvumo/spartos analizė naudojant push_back() funkciją ##
+
+Šiame testavime buvo palyginti std::vector ir customVector laikai, užpildant 10'000, 100'000, 1'000'000, 10'000'000 ir 100'000'000 int elementus, panaudojant push_back() funkciją.
