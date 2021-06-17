@@ -110,3 +110,18 @@ Reached capacity: 134217728
 Reallocated: 28 times
 Reached capacity: 134217728
 ```
+
+
+
+
+## 4. Spartos analizė, programos veikimo palyginimas ##
+
+Šioje užduotyje buvo palyginami programos v2.0 veikimo laikai naudojant std::vector ir customVector konteinerius.
+
+| Masyvo dydis \ konteinerio tipas | std::vector | Vector klasė |
+| :------------------------------- | :---------- | :----------- |
+| 1'000                            | 0.015s      | 0.012s       |
+| 10'000                           | 0.128s      | 0.123s       |
+| 100'000                          | 1.687s      | 1.612s       |
+| 1'000'000                        | 23.987s     | 23.114s      |
+
