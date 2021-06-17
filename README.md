@@ -39,3 +39,17 @@ typename Vector<T>::reference Vector<T>::at(size_type i) {
     else throw std::out_of_range {"Vector::at"};
 }
 ```
+
+
+
+#### push_back() funkcija ####
+
+```cpp
+template <class T>
+void Vector<T>::push_back(const T& val){
+    if(avail == limit)
+        growTwice();
+    unchecked_append(val);
+}
+```
+
